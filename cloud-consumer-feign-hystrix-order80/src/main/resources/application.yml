@@ -1,0 +1,23 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+
+spring:
+  application:
+    name: cloud-provider-hystrix-order
+
+feign:
+  hystrix:
+    enabled: true #如果处理自身的容错就开启。开启方式与服务端不一样。
+
+#设置客户端的连接超时时间
+#ribbon:
+  #建立连接所需要的时间
+  #ReadTimeout:  5000
+  #建立连接后从服务器读取所需要的资源所用的时间
+  #ConnectTimeout: 5000
