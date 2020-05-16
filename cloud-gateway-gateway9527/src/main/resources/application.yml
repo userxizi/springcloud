@@ -22,9 +22,9 @@ spring:
             - Path=/payment/lb/**   #断言,路径相匹配的进行路由
             #- After=2020-05-16T14:53:19.702+08:00[Asia/Shanghai] #指定服务开启时间
             #- Cookie=username,zrx  #带Cookie访问
-            - Header=X-Request-Id, \d+   #请求头中要有X-Request-Id属性并且值为整数的正则表达式
-            - Method=GET #必须是get请求才可以访问
-            - Query=username, \d+ #要有参数名称并且是正整数才能路由
+            #- Header=X-Request-Id, \d+   #请求头中要有X-Request-Id属性并且值为整数的正则表达式
+            #- Method=GET #必须是get请求才可以访问
+            #- Query=username, \d+ #要有参数名称并且是正整数才能路由
 
 
 eureka:
