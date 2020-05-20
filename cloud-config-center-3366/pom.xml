@@ -12,7 +12,7 @@
     <artifactId>cloud-config-center-3366</artifactId>
 
     <dependencies>
-
+        
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
