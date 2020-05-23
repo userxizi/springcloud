@@ -1,6 +1,7 @@
 server:
   port: 3366
 
+#使用微服务名称加端口号进行post请求，进行局部刷新
 spring:
   application:
     name: config-client
