@@ -11,7 +11,29 @@ spring:
           search-paths:
             - springcloud-config
       label: master
+
+#rabbitmq配置
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+
 eureka:
   client:
     service-url:
       defaultZone:  http://localhost:7001/eureka
+
+#rabbitmq的相关配置 ，暴露bus刷新配置的端点
+management:
+  endpoints: #暴露bus刷新配置的端点
+    web:
+      exposure:
+        include: 'bus-refresh'
+  health:
+    rabbit:
+      enabled: false
+
+#去除MQ配置
+autoconfigure:
+  exclude: org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration
