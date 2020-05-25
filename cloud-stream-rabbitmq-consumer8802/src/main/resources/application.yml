@@ -21,6 +21,7 @@ spring:
           destination: studyExchange # 表示要使用的Exchange名称定义
           content-type: application/json # 设置消息类型，本次为json，文本则设置“text/plain”
           binder: defaultRabbit  # 设置要绑定的消息服务的具体设置
+          #对消息进行分组，并且持久化操作，在服务器宕机的的时候未接受的消息会被保存，等服务器上线的时候会继续读取被持久化的消息
           group: zrxA
 
 eureka:
