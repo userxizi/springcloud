@@ -1,3 +1,5 @@
 spring:
   profiles:
+    #active: test #切换配置环境 test表示测试环境
+    #active: dev #切换配置环境 dev表示开发环境
     active: dev
