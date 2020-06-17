@@ -1,6 +1,6 @@
 package com.zrx.springcloud.controller;
 
-import com.zrx.springcloud.Service.PaymentFeignService;
+import com.zrx.springcloud.service.PaymentFeignService;
 import com.zrx.springcloud.entities.CommonResult;
 import com.zrx.springcloud.entities.Payment;
 import org.springframework.web.bind.annotation.GetMapping;
